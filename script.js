@@ -44,12 +44,12 @@ function createGrid(size) {
 
 // button to create grid of desired size on prompt
 gridButton.addEventListener("click", () => {
-    const newSize = prompt("Enter a new grid size:");
+    const newSize = prompt("Enter a new grid size (2-100):");
 
     if (newSize > 100){
         alert("Grid size must be less than or equal to 100.");
     } else if (isNaN(newSize) || newSize == undefined || newSize <= 1.5 || newSize == null){
-        alert("Invalid input. Please enter a number greater than 0.");
+        alert("Invalid input. Please enter a number greater than 2.");
     } else {
         createGrid(parseInt(newSize));
     }
