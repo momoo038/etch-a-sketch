@@ -67,6 +67,7 @@ function updateProgress(filledCount, totalCount){
 
     if (percentage == 100){
         progressPercentage.style.color = ("red");
+        gridButton.textContent = "Reset";
     } else {
         progressPercentage.style.color = ("black");
     }
